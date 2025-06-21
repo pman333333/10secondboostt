@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10-Second Boost</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f8f9;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      color: #1f4e5f;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    #boost {
+      background: #fff;
+      border: 1px solid #d2e3e5;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #333;
+      min-height: 100px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #1f4e5f;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #163c47;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    a {
+      color: #1f4e5f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Get Your 10-Second Boost</h1>
+  <button onclick="generateBoost()">Give Me a Boost</button>
+  <div id="boost">Press the button for a quick self-improvement tip.</div>
+
+  <footer>
+    <p><a href="https://yourgumroadlink.com" target="_blank">Get 100 AI Life Boosts (PDF)</a></p>
+    <p>🎥 Follow us on <a href="https://youtube.com/@yourchannel" target="_blank">YouTube</a> | 📸 <a href="https://instagram.com/yourpage" target="_blank">Instagram</a></p>
+  </footer>
+
+  <script>
+    const tips = [
+      "Take 3 deep breaths before your next task.",
+      "Write down one thing you're grateful for today.",
+      "Drink a glass of water right now.",
+      "Stand up and stretch for 10 seconds.",
+      "Smile—even if you don’t feel like it. It shifts your brain.",
+      "Turn off one notification for better focus.",
+      "Say no to one unnecessary obligation.",
+      "Repeat: I don't have to be perfect, just consistent.",
+      "Write one sentence about your current mood.",
+      "Put your phone face down for 10 minutes."
+    ];
+
+    function generateBoost() {
+      const random = Math.floor(Math.random() * tips.length);
+      document.getElementById("boost").innerText = tips[random];
+    }
+  </script>
+</body>
+</html>
